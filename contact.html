@@ -51,10 +51,25 @@
       margin: auto;
     }
 
-    section {
+       section {
       padding: 2em;
       max-width: 800px;
       margin: auto;
+      display: flex; /* Utilise Flexbox pour aligner la photo et le texte */
+      justify-content: space-between; /* Espacement entre le texte et la photo */
+      align-items: center; /* Centrer verticalement */
+    }
+
+    .contact-info {
+      flex: 1; /* Prendre toute la place disponible à gauche */
+      margin-right: 20px; /* Espacer la photo */
+    }
+
+    .contact-photo {
+      flex-shrink: 0; /* L'image ne doit pas rétrécir */
+      width: 200px; /* Taille de la photo */
+      height: auto; /* Garder les proportions */
+      border-radius: 10px; /* Facultatif, pour donner un effet arrondi */
     }
 
     .testimonials blockquote {
