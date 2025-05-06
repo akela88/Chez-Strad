@@ -104,3 +104,22 @@ footer .carte {
     text-align: left; /* facultatif */
   }
 }
+.accueil-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-accueil {
+  display: inline-block;
+  background-color: #5a4e3c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accueil:hover {
+  background-color: #7b6a52;
+}
