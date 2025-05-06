@@ -13,33 +13,43 @@
   <style>
     /* Vous pouvez ajouter ici des styles supplémentaires pour la page contact */
 
-    .contact-wrapper {
+   .contact-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
   max-width: 1000px;
   margin: auto;
+  flex-wrap: wrap; /* permet de passer en colonne sur petits écrans */
 }
 
 .contact-info {
   flex: 2;
+  min-width: 250px;
+}
+
+.contact-image {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
 }
 
 .contact-image img {
-  width: 200px;
+  width: 100%;
+  max-width: 250px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* 📱 Responsive pour petits écrans (mobile) */
+@media screen and (max-width: 768px) {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-image img {
+  .contact-image {
     margin-top: 20px;
   }
 }
@@ -180,25 +190,32 @@
     <h1 class="slogan">Une équipe à votre écoute</h1>
   </header>
 
-  <section>
+ <section class="contact-wrapper">
+  <div class="contact-info">
     <h1>Nous contacter</h1>
     <p>Notre équipe est à votre écoute pendant nos horaires d'ouverture.</p>
     <p>N'hésitez pas à prendre rendez-vous ou à nous appeler pour tout renseignement.</p>
 
-    <div class="contact-info">
-      <h2>Informations pratiques :</h2>
-      <p><strong>Adresse :</strong> 12 Via Mauro Macchi, 20124 Crémona, Italie</p>
-      <p><strong>Téléphone :</strong> 07 66 00 45 44</p>
-      <p><strong>Email :</strong> <a href="mailto:chezstrad@proton.me">chezstrad@proton.me</a></p>
-      <p><strong>Horaires :</strong> Du lundi au vendredi de 9h à 12h et de 14h à 18h</p>
-    </div>
-    <!-- Image du violon placée à droite -->
-    <img src="images/violon.jpg" alt="photo de violons" class="contact-photo">
-    </div>
+    <h2>Informations pratiques :</h2>
+    <p><strong>Adresse :</strong> 12 Via Mauro Macchi, 20124 Crémona, Italie</p>
+    <p><strong>Téléphone :</strong> 07 66 00 45 44</p>
+    <p><strong>Email :</strong> <a href="mailto:chezstrad@proton.me">chezstrad@proton.me</a></p>
+    <p><strong>Horaires :</strong> Du lundi au vendredi de 9h à 12h et de 14h à 18h</p>
 
     <h2>Nous trouver :</h2>
- <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=10.024254620075228%2C45.13516137967886%2C10.027017295360567%2C45.13619068845112&amp;layer=mapnik&amp;marker=45.135676036387395%2C10.025635957717896" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=45.135676&amp;mlon=10.025636#map=19/45.135676/10.025636">Afficher une carte plus grande</a></small>
-  </section>
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=10.024254620075228%2C45.13516137967886%2C10.027017295360567%2C45.13619068845112&amp;layer=mapnik&amp;marker=45.135676036387395%2C10.025635957717896"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+    <p><a href="https://www.openstreetmap.org/?mlat=45.135676&amp;mlon=10.025636#map=19/45.135676/10.025636" target="_blank">
+      Voir la carte en plein écran</a></p>
+  </div>
+
+  <div class="contact-image">
+    <img src="images/violons.jpg" alt="Photo de violons">
+  </div>
+</section>
 
   <footer>
     <p>&copy; 2025 Chez Strad. Tous droits réservés.</p>
