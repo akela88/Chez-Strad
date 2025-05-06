@@ -13,47 +13,47 @@
   <style>
     /* Vous pouvez ajouter ici des styles supplémentaires pour la page contact */
 
-   .contact-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  max-width: 1000px;
-  margin: auto;
-  flex-wrap: wrap; /* permet de passer en colonne sur petits écrans */
-}
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      flex-wrap: wrap; /* permet de passer en colonne sur petits écrans */
+    }
 
-.contact-info {
-  flex: 2;
-  min-width: 250px;
-}
+    .contact-info {
+      flex: 2;
+      min-width: 250px;
+      margin-bottom: 20px;
+    }
 
-.contact-image {
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-}
+    .contact-image {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }
 
-.contact-image img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
+    .contact-image img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
 
-/* 📱 Responsive pour petits écrans (mobile) */
-@media screen and (max-width: 768px) {
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* 📱 Responsive pour petits écrans (mobile) */
+    @media screen and (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
 
-  .contact-image {
-    margin-top: 20px;
-  }
-}
-
+      .contact-image {
+        margin-top: 20px;
+      }
+    }
 
     body {
       font-family: Georgia, serif;
@@ -78,43 +78,8 @@
       color: #5a4e3c;
     }
 
-    .hero {
-      background-size: cover;
-      background-position: center;
-      padding: 5em 2em;
-      color: white;
-      position: relative;
-    }
-
-    .hero .overlay {
-      background-color: rgba(0, 0, 0, 0.5);
+    section {
       padding: 2em;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .testimonials blockquote {
-      border-left: 5px solid #ccc;
-      padding-left: 1em;
-      margin: 1em 0;
-      font-style: italic;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2em;
-      background-color: #ece6dd;
-    }
-
-    footer .carte {
-      max-width: 300px;
-      display: block;
-      margin: auto;
-    }
-
-    /* Style spécifique à la page contact */
-    .contact-info {
-      margin-bottom: 20px;
     }
 
     iframe {
@@ -137,7 +102,26 @@
       font-size: 1.1em;
     }
 
+    .contact-info a {
+      color: #3498db;
+      text-decoration: none;
+    }
 
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #ece6dd;
+    }
+
+    footer .carte {
+      max-width: 300px;
+      display: block;
+      margin: auto;
+    }
   </style>
 
 </head>
@@ -148,32 +132,33 @@
     <h1 class="slogan">Une équipe à votre écoute</h1>
   </header>
 
- <section class="contact-wrapper">
-  <div class="contact-info">
-    <h1>Nous contacter</h1>
-    <p>Notre équipe est à votre écoute pendant nos horaires d'ouverture.</p>
-    <p>N'hésitez pas à prendre rendez-vous ou à nous appeler pour tout renseignement.</p>
+  <section class="contact-wrapper">
+    <div class="contact-info">
+      <h1>Nous contacter</h1>
+      <p>Notre équipe est à votre écoute pendant nos horaires d'ouverture.</p>
+      <p>N'hésitez pas à prendre rendez-vous ou à nous appeler pour tout renseignement.</p>
 
-    <h2>Informations pratiques :</h2>
-    <p><strong>Adresse :</strong> 12 Via Mauro Macchi, 20124 Crémona, Italie</p>
-    <p><strong>Téléphone :</strong> 07 66 00 45 44</p>
-    <p><strong>Email :</strong> <a href="mailto:chezstrad@proton.me">chezstrad@proton.me</a></p>
-    <p><strong>Horaires :</strong> Du lundi au vendredi de 9h à 12h et de 14h à 18h</p>
+      <h2>Informations pratiques :</h2>
+      <p><strong>Adresse :</strong> 12 Via Mauro Macchi, 20124 Crémona, Italie</p>
+      <p><strong>Téléphone :</strong> 07 66 00 45 44</p>
+      <p><strong>Email :</strong> <a href="mailto:chezstrad@proton.me">chezstrad@proton.me</a></p>
+      <p><strong>Horaires :</strong> Du lundi au vendredi de 9h à 12h et de 14h à 18h</p>
 
-    <h2>Nous trouver :</h2>
-    <iframe
-      src="https://www.openstreetmap.org/export/embed.html?bbox=10.024254620075228%2C45.13516137967886%2C10.027017295360567%2C45.13619068845112&amp;layer=mapnik&amp;marker=45.135676036387395%2C10.025635957717896"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-    <p><a href="https://www.openstreetmap.org/?mlat=45.135676&amp;mlon=10.025636#map=19/45.135676/10.025636" target="_blank">
-      Voir la carte en plein écran</a></p>
-  </div>
+      <h2>Nous trouver :</h2>
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=10.024254620075228%2C45.13516137967886%2C10.027017295360567%2C45.13619068845112&amp;layer=mapnik&amp;marker=45.135676036387395%2C10.025635957717896"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+      <p><a href="https://www.openstreetmap.org/?mlat=45.135676&amp;mlon=10.025636#map=19/45.135676/10.025636" target="_blank">
+        Voir la carte en plein écran</a></p>
+    </div>
 
-  <div class="contact-image">
-    <img src="images/violons.jpg" alt="Photo de violons">
-  </div>
-</section>
+    <!-- Image à droite -->
+    <div class="contact-image">
+      <img src="images/violons.jpg" alt="Photo de violons">
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Chez Strad. Tous droits réservés.</p>
