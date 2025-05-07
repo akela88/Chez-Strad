@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap : https://akela88.github.io/Chez-Strad/sitemap.xml
+Sitemap : https://akela88.github.io/Chez-Strad/sitemap.xml.txt
