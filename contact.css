@@ -65,6 +65,10 @@ footer {
     color: white;
     margin-top: 30px;
 }
+.accueil-link {
+  text-align: center;
+  margin-top: 15px;
+}
 .btn-accueil {
   display: inline-block;
   background-color: #5a4e3c;
