@@ -75,9 +75,8 @@ footer .carte {
 
 .member-content {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
+  align-items: center; /* ← aligne verticalement l’image et le texte */
+  margin-bottom: 40px;
 }
 
 .member-photo {
@@ -91,7 +90,9 @@ footer .carte {
 .member-text {
   flex: 1;
 }
-
+.member-text h2 {
+  margin-top: 0;
+}
 /* Responsive : sur petits écrans, les blocs repassent en colonne */
 @media (max-width: 768px) {
   .member-content {
