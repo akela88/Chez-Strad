@@ -1,10 +1,9 @@
 .member-photo {
   max-width: 200px;
-  width: 100%;
   height: auto;
-  border-radius: 10px; /* Optionnel, pour adoucir les bords */
-  display: block;
-  margin: 0 auto 1em;
+  border-radius: 10px;
+  flex-shrink: 0;
+  margin-right: 20px; /* espace entre image et texte */
 }
 
 body {
