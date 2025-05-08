@@ -89,6 +89,24 @@ footer .carte {
 .btn-accueil:hover {
   background-color: #7b6a52;
 }
+.machines-outils-link {
+  text-align: center;
+  margin-top: 15px;
+}
+.btn-machines-outils {
+  display: inline-block;
+  background-color: #5a4e3c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-machines-outils:hover {
+  background-color: #7b6a52;
+}
 .equipe-link {
   text-align: center;
   margin-top: 15px;
