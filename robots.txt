@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap : https://chez-strad-lutherie-du-quatuor.netlify.app/sitemap.xml
+Sitemap: https://chez-strad-lutherie-du-quatuor.netlify.app/sitemap.xml
